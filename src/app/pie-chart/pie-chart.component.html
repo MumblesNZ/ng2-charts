@@ -1,0 +1,18 @@
+<div>
+  <div>
+    <div style="display: block">
+      <canvas baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [legend]="pieChartLegend">
+      </canvas>
+    </div>
+  </div>
+</div>
+<div>
+  <button mat-button mat-raised-button color="primary" (click)="pieChartLegend=!pieChartLegend">Toggle Legend</button>
+  <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Change Labels</button>
+</div>
